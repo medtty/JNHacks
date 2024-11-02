@@ -38,7 +38,7 @@ export function JudgesSection() {
   ];
 
   return (
-    <section className="py-20" id="judges">
+    <section className="py-20 mx-12" id="judges">
       <div className="container px-4 md:px-6">
         <div className="text-center space-y-4 mb-12">
           <h2 className="text-3xl font-bold tracking-tighter">Meet Our Judges</h2>
