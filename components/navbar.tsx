@@ -1,5 +1,13 @@
 "use client";
 
+import {
+  ClerkProvider,
+  SignInButton,
+  SignedIn,
+  SignedOut,
+  UserButton
+} from '@clerk/nextjs'
+
 import { useState } from "react";
 import Link from "next/link";
 import { ModeToggle } from "./mode-toggle";
@@ -19,6 +27,7 @@ export function Navbar() {
   ];
 
   return (
+    <ClerkProvider>
     <nav className="sticky top-0 z-10 flex justify-between items-center bg-white shadow-sm py-4 px-8">
       <div className="flex items-center space-x-2">
         <Link href="/" className="flex items-center space-x-2">
@@ -36,7 +45,13 @@ export function Navbar() {
             {item.label}
           </Link>
         ))}
-        <Button variant="default" size="sm"><a href="https://forms.gle/vnfjkiF3WZfzNQ958">Register</a></Button>
+        {/* <Button variant="default" size="sm"><a href="https://forms.gle/vnfjkiF3WZfzNQ958">Register</a></Button> */}
+        <SignedOut>
+            <SignInButton />
+          </SignedOut>
+          <SignedIn>
+            <UserButton />
+        </SignedIn>
         {/* <ModeToggle /> */}
       </div>
       <div className="md:hidden">
@@ -72,5 +87,6 @@ export function Navbar() {
         </div>
       )}
     </nav>
+    </ClerkProvider>
   );
 }
