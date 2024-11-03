@@ -11,6 +11,7 @@ import { Inter } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Navbar } from '@/components/navbar';
 import { Toaster } from "@/components/ui/toaster";
+import { Footer } from '@/components/footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -28,7 +29,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ClerkProvider>
+    <ClerkProvider appearance={{
+      layout: {
+        unsafe_disableDevelopmentModeWarnings: true,
+      },
+    }}>
       <html lang="en" suppressHydrationWarning>
         <body className={inter.className}>
           <ThemeProvider
@@ -47,9 +52,10 @@ export default function RootLayout({
             </div>
             <Toaster />
           </ThemeProvider>
-          <div>
+          <Footer />
+          {/* <div>
             <p className='text-center p-6'>made with ❤️ by <a href="https://github.com/medtty" className='text-slate-400 underline'>medtty</a></p>
-          </div>
+          </div> */}
         </body>
       </html>
     </ClerkProvider>

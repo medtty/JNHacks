@@ -27,7 +27,14 @@ export function Navbar() {
   ];
 
   return (
-    <ClerkProvider>
+    <ClerkProvider appearance={{
+      layout: {
+        unsafe_disableDevelopmentModeWarnings: true,
+      },
+      elements: {
+        formButtonPrimary: "bg-purple-500 hover:bg-purple-600"
+      }
+    }}>
     <nav className="sticky top-0 z-10 flex justify-between items-center bg-white shadow-sm py-4 px-8">
       <div className="flex items-center space-x-2">
         <Link href="/" className="flex items-center space-x-2">
@@ -47,9 +54,13 @@ export function Navbar() {
         ))}
         {/* <Button variant="default" size="sm"><a href="https://forms.gle/vnfjkiF3WZfzNQ958">Register</a></Button> */}
         <SignedOut>
-            <SignInButton />
-          </SignedOut>
-          <SignedIn>
+          <SignInButton mode="modal">
+            <button className="bg-primary text-primary-foreground hover:bg-primary/90 text-white text-sm px-4 py-2 rounded-md">
+              Sign In
+            </button>
+          </SignInButton>
+        </SignedOut>
+        <SignedIn>
             <UserButton />
         </SignedIn>
         {/* <ModeToggle /> */}
