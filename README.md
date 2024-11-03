@@ -1,3 +1,5 @@
+![JNHacks2024 Banner](https://jnh24.vercel.app/img/jnh-banner.png)
+
 # JNHacks2024
 
 **JNHacks2024** is a 24-hour hackathon focused on AI-powered projects, held at [NUIST](https://nuist.edu.cn)'s Jinniuhu campus. It encourages students to innovate, collaborate, and create AI-driven applications across diverse domains.
