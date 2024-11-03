@@ -9,7 +9,7 @@ export function getLastCommitDate() {
     const formatter = new Intl.DateTimeFormat('en-US', {
       timeZone: 'Asia/Shanghai',
       year: 'numeric',
-      month: 'long',
+      month: 'short',
       day: 'numeric',
       hour: '2-digit',
       minute: '2-digit',
