@@ -17,7 +17,7 @@ export function HeroSection() {
           <CountdownTimer />
           <div className="space-x-4">
             <Button size="lg"><a href="https://forms.gle/vnfjkiF3WZfzNQ958">Register Now</a></Button>
-            <Button variant="outline" size="lg">Learn More</Button>
+            <Button variant="outline" size="lg"><a href="https://github.com/medtty/JNHacks">Learn more</a></Button>
           </div>
         </div>
       </div>

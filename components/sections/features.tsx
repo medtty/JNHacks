@@ -30,7 +30,7 @@ export function FeaturesSection() {
       <div className="text-center space-y-4 mb-12">
           <h2 className="text-3xl font-bold tracking-tighter">Features</h2>
           <p className="text-muted-foreground max-w-[700px] mx-auto">
-            Features Features Features Features
+          JNHacks2024 is a 24-hour hackathon focused on AI-powered projects, held at <a href="https://nuist.edu.cn" target="_blank" className="text-blue-600">NUIST</a>'s Jinniuhu campus. It encourages students to innovate, collaborate, and create AI-driven applications across diverse domains.
           </p>
       </div>
       <div className="container px-4 md:px-6">
