@@ -32,6 +32,7 @@ export function Navbar() {
         layout: {
           unsafe_disableDevelopmentModeWarnings: true,
         },
+        variables: { colorPrimary: 'blue' },
         elements: {
           formButtonPrimary: "bg-purple-500 hover:bg-purple-600",
         },

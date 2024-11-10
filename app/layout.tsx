@@ -33,6 +33,10 @@ export default function RootLayout({
       layout: {
         unsafe_disableDevelopmentModeWarnings: true,
       },
+      elements: {
+        formButtonPrimary: 'bg-blue-600',
+      },
+      
     }}>
       <html lang="en" suppressHydrationWarning>
         <body className={inter.className}>
