@@ -1,4 +1,5 @@
-![JNHacks2024 Banner](https://jnh24.vercel.app/img/jnh-banner.png)
+<!-- ![JNHacks2024 Banner](https://jnh24.vercel.app/img/jnh-banner.png)-->
+![JNHacks2024 Banner](public/img/jnh-banner.png)
 
 # JNHacks2024
 
